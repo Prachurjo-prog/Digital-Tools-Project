@@ -1,13 +1,15 @@
 
 import './App.css'
+import Footer from './Components/Footer/Footer'
 import NavBar from './Components/NavBar/NavBar'
 
 function App() {
 
   return (
     <>
-    <div className='manrope md:max-w-[80%] mx-auto'>
-      <NavBar/>
+    <div className='manrope  mx-auto'>
+      <NavBar />
+      <Footer/>
     </div>
      
     </>

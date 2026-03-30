@@ -4,8 +4,8 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div>
-      <div className="navbar ">
+    <div className='shadow-sm'>
+      <div className="navbar  md:max-w-[70%] mx-auto">
         <div className="navbar-start flex items-center">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
