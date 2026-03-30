@@ -7,16 +7,17 @@ const Hero = () => {
   return (
     <div className="md:max-w-[70%] max-w-[90%] md:flex justify-between mx-auto items-center gap-3 mt-10 md:mt-20">
       <div className="gap-5">
-        
         <div className="inline-flex items-center gap-2 bg-[#E1E7FF] border border-purple-500 text-purple-600 text-sm font-medium px-5 py-2 rounded-full">
-            <img src={dot} /> <p>New: AI-Powered Tools Available</p>
-          </div>
+          <img src={dot} /> <p>New: AI-Powered Tools Available</p>
+        </div>
 
         <h1 className="lg:text-7xl md:text-4xl text-3xl font-bold md:mt-5 mt-2.5">
-          Supercharge Your<br/> Digital Workflow
+          Supercharge Your
+          <br /> Digital Workflow
         </h1>
         <p className="mt-5 text-gray-600">
-          Access premium AI tools, design assets, templates, and productivity<br/>
+          Access premium AI tools, design assets, templates, and productivity
+          <br />
           software—all in one place. Start creating faster today.
           <br /> Explore Products
         </p>
