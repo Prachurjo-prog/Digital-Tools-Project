@@ -4,9 +4,9 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className='shadow-sm'>
-      <div className="navbar  md:max-w-[70%] mx-auto">
-        <div className="navbar-start flex items-center">
+    <div className='shadow-sm sticky bg-white top-0 z-10'>
+      <div className="navbar md:max-w-[70%] mx-auto ">
+        <div className="navbar-start flex items-center  ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -70,7 +70,7 @@ const NavBar = () => {
         <div className="navbar-end flex items-center gap-4">
             <a className='hidden lg:block'> Login</a>
            
-          <a className="btn rounded-2xl bg-gradient-to-r from-purple-500 to-purple-700 text-white">Get Started</a>
+          <a className="btn rounded-full bg-linear-to-r from-purple-500 to-purple-700 text-white">Get Started</a>
         </div>
       </div>
     </div>

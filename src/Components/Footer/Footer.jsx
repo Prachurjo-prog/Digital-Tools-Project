@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className=''>
            <footer className="bg-zinc-950 border-t border-red-900/50 pt-16 pb-10">
-      <div className="max-w-[72%] mx-auto px-6">
+      <div className="md:max-w-[72%] mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           {/* Logo & Description */}
           <div className="md:col-span-5">
@@ -15,8 +15,7 @@ const Footer = () => {
             </div>
 
             <p className="text-zinc-400 text-lg max-w-md">
-              One subscription. Access to all frontier AI models in a single
-              powerful platform.
+              Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
             </p>
           </div>
 
