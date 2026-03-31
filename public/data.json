@@ -1,0 +1,138 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Resume Pro Builder",
+    "description": "Create ATS-optimized resumes with 100+ professional templates and AI-powered content suggestions.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "AI content suggestions",
+      "Unlimited downloads",
+      "Export to PDF & Word"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": "prod_002",
+    "name": "Career Bundle Annual",
+    "description": "Unlimited resumes, cover letters, and LinkedIn optimization with premium templates for the whole year.",
+    "price": 89.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited resumes & cover letters",
+      "LinkedIn profile builder",
+      "ATS score checker",
+      "Priority support",
+      "Job tracker integration"
+    ],
+    "icon": "🎯"
+  },
+  {
+    "id": "prod_003",
+    "name": "Quick Resume Maker",
+    "description": "One-time access to build and download a professional resume instantly with expert templates.",
+    "price": 19.99,
+    "period": "one-time",
+    "tag": "",
+    "tagType": "",
+    "features": [
+      "50+ modern templates",
+      "Real-time preview",
+      "PDF export",
+      "Basic ATS friendly",
+      "1 resume download"
+    ],
+    "icon": "⚡"
+  },
+  {
+    "id": "prod_004",
+    "name": "Premium Cover Letter Pro",
+    "description": "AI-powered cover letter builder that matches your resume and tailors content for any job.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "AI writing assistant",
+      "Job-specific tailoring",
+      "Matching resume designs",
+      "Unlimited generations",
+      "PDF & Word export"
+    ],
+    "icon": "✉️"
+  },
+  {
+    "id": "prod_005",
+    "name": "LinkedIn Profile Optimizer",
+    "description": "Professional LinkedIn profile makeover with keyword optimization and headline suggestions.",
+    "price": 49.99,
+    "period": "one-time",
+    "tag": "",
+    "tagType": "",
+    "features": [
+      "Full profile rewrite",
+      "Keyword optimization",
+      "Headline & summary",
+      "Experience section boost",
+      "Profile PDF export"
+    ],
+    "icon": "🔗"
+  },
+  {
+    "id": "prod_006",
+    "name": "All-in-One Career Pass",
+    "description": "Access to resume builder, cover letter tool, LinkedIn optimizer, and interview prep in one subscription.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Resume + Cover Letter",
+      "LinkedIn optimization",
+      "Interview question bank",
+      "ATS scoring",
+      "Unlimited projects"
+    ],
+    "icon": "🚀"
+  },
+  {
+    "id": "prod_007",
+    "name": "Student Resume Pack",
+    "description": "Perfect for students and recent graduates. Includes internship-focused templates and entry-level guidance.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Entry-level templates",
+      "Internship focus",
+      "Academic project section",
+      "AI bullet point writer",
+      "PDF downloads"
+    ],
+    "icon": "🎓"
+  },
+  {
+    "id": "prod_008",
+    "name": "Executive Career Suite",
+    "description": "Premium package for senior professionals with executive templates, LinkedIn strategy, and advanced ATS tools.",
+    "price": 149.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Executive templates",
+      "Advanced AI rewriting",
+      "C-level LinkedIn optimization",
+      "Personal branding kit",
+      "Priority expert review"
+    ],
+    "icon": "👔"
+  }
+]

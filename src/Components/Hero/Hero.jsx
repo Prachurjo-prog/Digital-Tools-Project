@@ -25,7 +25,7 @@ const Hero = () => {
           <button className="btn btn-primary rounded-full bg-linear-to-r from-purple-500 to-purple-700 border-none">
             Explore Products
           </button>
-          <button className="btn btn-outline items-center rounded-full hover:bg-purple-600 hover:text-white">
+          <button className="btn btn-outline items-center border-purple-500 rounded-full hover:bg-purple-600 hover:text-white">
             <span>
               <img src={play} />
             </span>{" "}

@@ -27,7 +27,7 @@ const GetStarted = () => {
                         <p className='bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center absolute right-5 top-2.5' >02</p>
                     </div>
                     <img src={product} alt='user' className='bg-[#F3E8FE] p-5 rounded-full items-center'/>
-                    <h2 className='text-xl font-semibold'>Choose Products</h2>
+                    <h2 className='text-xl font-semibold pt-2.5'>Choose Products</h2>
                     <p className='pt-2 '>Browse our catalog and select the tools<br/> that fit your needs.</p>
                 </div>
                 <div className='bg-[#FFFFFF] p-5 flex flex-col items-center text-center rounded-lg mt-10 relative'>
@@ -35,7 +35,7 @@ const GetStarted = () => {
                         <p className='bg-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center absolute right-5 top-2.5' >03</p>
                     </div>
                     <img src={start} alt='user' className='bg-[#F3E8FE] p-5 rounded-full items-center'/>
-                    <h2 className='text-xl font-semibold'>Start Creating</h2>
+                    <h2 className='text-xl font-semibold pt-2.5'>Start Creating</h2>
                     <p className='pt-2 '>Download and start using your premium <br/>tools immediately.</p>
                 </div>
               </div>
