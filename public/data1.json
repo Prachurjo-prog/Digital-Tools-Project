@@ -102,7 +102,7 @@
       "Automation workflows",
       "Performance tracking"
     ],
-    "icon": "📧"
+    "icon": "../src/assets/email.ico"
   },
   {
     "id": 8,
@@ -117,7 +117,7 @@
       "Built-in effects",
       "Audio editing tools"
     ],
-    "icon": "🎬"
+    "icon": "../src/assets/video.ico"
   },
   {
   "id": 9,
@@ -132,6 +132,6 @@
     "On-page SEO analysis",
     "Competitor tracking"
   ],
-  "icon": "🔍"
+  "icon": "../src/assets/seo.ico"
 }
 ]

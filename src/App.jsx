@@ -9,6 +9,7 @@ import Popularity from './Components/Popularity/Popularity'
 import PricingSection from './Components/Pricing/PricingSection'
 import Product from './Components/ProductCards/Product'
 import ReadySection from './Components/Ready/ReadySection'
+import Carts from './Components/Carts/Carts'
 
 
 
@@ -32,6 +33,7 @@ function App() {
       <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
         <Product productPromise={productPromise}/>
       </Suspense>
+      <Carts/>
       
       <GetStarted/>
       <PricingSection/>
