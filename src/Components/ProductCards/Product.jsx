@@ -1,12 +1,14 @@
-import { use } from "react";
+import { use, useState } from "react";
 import ProductsData from "./ProductsData";
+import Carts from "../Carts/Carts";
+import AllProducts from "./AllProducts";
 
 
 const Product = ({ productPromise }) => {
   const products = use(productPromise);
   
   
-  // const [productTab, setProductTab] = useState("")
+  const [productTab, setProductTab] = useState("product")
 
   return (
     <div>
@@ -20,16 +22,17 @@ const Product = ({ productPromise }) => {
           creativity.
         </p>
         <div className="flex items-center justify-center">
-          <button className="btn rounded-l-2xl">Products</button>
-          <button className="btn rounded-r-2xl">Cart (2)</button>
+          <button onClick={()=> setProductTab('product')} className={`btn rounded-l-2xl ${productTab === 'product'? 'bg-purple-600 text-white' : 'bg-gray-100' }`}>Products</button>
+          <button onClick={()=> setProductTab('cart')} className={`btn rounded-r-2xl ${productTab === 'cart'? 'bg-purple-600 text-white' : 'bg-gray-100' }`}>Cart ({products.length})</button>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-6">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-6">
           {products.map((product) => (
             <ProductsData product={product}/>
           ))}
-        </div>
+        </div> */}
       </div>
+      {productTab === 'product'? (<AllProducts products={products}/>) : (<Carts/>)}
     </div>
   );
 };
