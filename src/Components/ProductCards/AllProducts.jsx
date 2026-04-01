@@ -1,12 +1,12 @@
 import React from 'react';
 import ProductsData from './ProductsData';
 
-const AllProducts = ({products}) => {
+const AllProducts = ({products, cartProducts, setCartProducts}) => {
     return (
-        <div className='md:max-w-[70%] max-w-[90%]  mx-auto'>
+        <div className=''>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-6">
           {products.map((product) => (
-            <ProductsData product={product}/>
+            <ProductsData key={product.id} product={product} cartProducts={cartProducts} setCartProducts={setCartProducts}/>
           ))}
         </div>   
         </div>

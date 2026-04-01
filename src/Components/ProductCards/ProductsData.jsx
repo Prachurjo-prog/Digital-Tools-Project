@@ -2,9 +2,15 @@ import React, { useState } from 'react';
 import { Check } from "lucide-react";
 
 
-const ProductsData = ({ product}) => {
+const ProductsData = ({ product,setCartProducts}) => {
 
       const [isBuying, setBuying] = useState(false);
+
+      const handleBuy = () => {
+        setBuying(true);
+        
+        setCartProducts(prev => [...prev, product]);
+      }
         return (
         <div>
               <div className=" shadow-sm p-5 rounded-2xl space-y-4">
@@ -37,7 +43,7 @@ const ProductsData = ({ product}) => {
                     {product.features[2]}
                   </li>
                 </ul>
-                <button onClick={()=>setBuying(true)} class="btn bg-purple-600 text-white w-full rounded-full">
+                <button onClick={handleBuy} class="btn bg-purple-600 text-white w-full rounded-full">
                   {isBuying ? 'Buying...': 'Buy Now'}
                 </button>
               </div>

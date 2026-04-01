@@ -23,6 +23,8 @@ function App() {
 
   const productPromise = fetchProducts()
 
+  
+ 
   return (
     <>
     <div className='manrope mx-auto'>
@@ -30,8 +32,8 @@ function App() {
       <Hero/>
       <Popularity/>
 
-      <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-        <Product productPromise={productPromise}/>
+      <Suspense fallback={<span className="loading loading-spinner loading-xl items-center flex justify-center"></span>}>
+        <Product productPromise={productPromise} />
       </Suspense>
       {/* <Carts/> */}
       

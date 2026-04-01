@@ -10,6 +10,9 @@ const Product = ({ productPromise }) => {
   
   const [productTab, setProductTab] = useState("product")
 
+  const [cartProducts, setCartProducts] = useState([])
+  
+
   return (
     <div>
       <div className="md:max-w-[70%] max-w-[90%]  mx-auto  space-y-4 mb-10">
@@ -23,7 +26,7 @@ const Product = ({ productPromise }) => {
         </p>
         <div className="flex items-center justify-center">
           <button onClick={()=> setProductTab('product')} className={`btn rounded-l-2xl ${productTab === 'product'? 'bg-purple-600 text-white' : 'bg-gray-100' }`}>Products</button>
-          <button onClick={()=> setProductTab('cart')} className={`btn rounded-r-2xl ${productTab === 'cart'? 'bg-purple-600 text-white' : 'bg-gray-100' }`}>Cart ({products.length})</button>
+          <button onClick={()=> setProductTab('cart')} className={`btn rounded-r-2xl ${productTab === 'cart'? 'bg-purple-600 text-white' : 'bg-gray-100' }`}>Cart ({cartProducts.length})</button>
         </div>
 
         {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-6">
@@ -31,8 +34,9 @@ const Product = ({ productPromise }) => {
             <ProductsData product={product}/>
           ))}
         </div> */}
+        {productTab === 'product'? (<AllProducts products={products} setCartProducts={setCartProducts}/>) : (<Carts cartProducts={cartProducts}/>)}
       </div>
-      {productTab === 'product'? (<AllProducts products={products}/>) : (<Carts/>)}
+      
     </div>
   );
 };
