@@ -7,6 +7,7 @@ const ProductsData = ({ product, setCartProducts }) => {
 
   const handleBuy = () => {
     setBuying(true);
+    
 
     toast("Product added to cart!");
     setCartProducts((prev) => [...prev, product]);
@@ -44,10 +45,10 @@ const ProductsData = ({ product, setCartProducts }) => {
           </li>
         </ul>
         <button
-          onClick={handleBuy}
-          class="btn bg-purple-600 text-white w-full rounded-full"
+          onClick={handleBuy} disabled={isBuying}
+          className="btn bg-purple-600 text-white w-full rounded-full "
         >
-          {isBuying ? "Buying..." : "Buy Now"}
+          {isBuying ? ("Product added to cart") : ("Buy Now")}
         </button>
       </div>
     </div>

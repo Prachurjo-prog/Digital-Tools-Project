@@ -1,8 +1,10 @@
 import logo from '../../assets/DigiTools.png'
-
+import { ShoppingCart } from 'lucide-react';
 import React from "react";
 
+
 const NavBar = () => {
+    
   return (
     <div className='shadow-sm sticky bg-white top-0 z-10'>
       <div className="navbar md:max-w-[70%] mx-auto ">
@@ -68,6 +70,9 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end flex items-center gap-4">
+          
+             <ShoppingCart/>
+         
             <a className='hidden lg:block'> Login</a>
            
           <a className="btn rounded-full bg-linear-to-r from-purple-500 to-purple-700 text-white">Get Started</a>

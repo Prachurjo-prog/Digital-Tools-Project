@@ -18,11 +18,13 @@ const fetchProducts = async () => {
 
 function App() {
   const productPromise = fetchProducts();
+  
 
   return (
     <>
       <div className="manrope mx-auto">
-        <NavBar />
+        <NavBar/>
+
         <Hero />
         <Popularity />
 
