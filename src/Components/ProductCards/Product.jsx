@@ -44,7 +44,10 @@ const Product = ({ productPromise }) => {
         {productTab === "product" ? (
           <AllProducts products={products} setCartProducts={setCartProducts} />
         ) : (
-          <Carts cartProducts={cartProducts} setCartProducts={setCartProducts}/>
+          <Carts
+            cartProducts={cartProducts}
+            setCartProducts={setCartProducts}
+          />
         )}
       </div>
     </div>

@@ -1,20 +1,29 @@
 import React from "react";
 import design from "../../assets/design.png";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
-
-const Carts = ({ cartProducts, setCartProducts}) => {
+const Carts = ({ cartProducts, setCartProducts }) => {
   console.log(cartProducts);
 
   const deleteProductCard = (cartProducts) => {
     console.log(cartProducts);
-    setCartProducts((prev) =>
-      prev.filter((product) => product.id !== cartProducts.id),
-    toast.warning("Product removed from cart!")
+    setCartProducts(
+      (prev) => prev.filter((product) => product.id !== cartProducts.id),
+      toast.warning("Product removed from cart!"),
     );
   };
 
-  
+  const handlePayment = () => {
+    setCartProducts([]);
+    toast.success("Payment Successful!");
+  };
+
+  const totalPrice = cartProducts.reduce(
+    (total, product) => total + product.price,
+    0,
+  );
+  console.log(totalPrice);
+
   return (
     <div>
       {cartProducts.length === 0 ? (
@@ -47,10 +56,10 @@ const Carts = ({ cartProducts, setCartProducts}) => {
           ))}
           <div className="flex justify-between items-center mt-6">
             <p className=" font-semibold text-gray-500">Total:</p>
-            <p className="text-xl font-bold">$23</p>
+            <p className="text-xl font-bold">${totalPrice}</p>
           </div>
           <button
-            onClick={() => deleteProductCard(cartProducts)}
+            onClick={handlePayment}
             className="btn w-full rounded-full bg-purple-600 text-white mt-5"
           >
             Proceed to Checkout
