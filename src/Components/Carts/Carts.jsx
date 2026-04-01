@@ -1,11 +1,23 @@
 import React from "react";
 import design from "../../assets/design.png";
 
-const Carts = ({ cartProducts }) => {
+const Carts = ({ cartProducts, setCartProducts}) => {
+  console.log(cartProducts);
+
+  const deleteProductCard = (cartProducts) => {
+    console.log(cartProducts);
+    setCartProducts((prev) =>
+      prev.filter((product) => product.id !== cartProducts.id),
+    );
+    
+
+  };
   return (
     <div>
       {cartProducts.length === 0 ? (
-        <h1 className="text-center text-2xl font-bold mt-10 bg-gray-100 p-10 rounded-2xl">Your cart is empty</h1>
+        <h1 className="text-center text-2xl font-bold mt-10 bg-gray-100 p-10 rounded-2xl">
+          Your cart is empty
+        </h1>
       ) : (
         <div className=" bg-white rounded-lg shadow-md p-6 mt-10 mb-10">
           <h1 className="md:text-3xl text-2xl font-bold">Your Cart</h1>
@@ -21,9 +33,12 @@ const Carts = ({ cartProducts }) => {
                   <p>${cartProducts.price}</p>
                 </div>
 
-                <p className="items-end text-end flex justify-end absolute right-4 text-red-500 font-bold cursor-pointer">
+                <button
+                  onClick={() => deleteProductCard(cartProducts)}
+                  className="items-end text-end flex justify-end absolute right-4 text-red-500 font-bold cursor-pointer"
+                >
                   Remove
-                </p>
+                </button>
               </div>
             </div>
           ))}
@@ -31,7 +46,10 @@ const Carts = ({ cartProducts }) => {
             <p className=" font-semibold text-gray-500">Total:</p>
             <p className="text-xl font-bold">$23</p>
           </div>
-          <button className="btn w-full rounded-full bg-purple-600 text-white mt-5">
+          <button
+            onClick={() => deleteProductCard(cartProducts)}
+            className="btn w-full rounded-full bg-purple-600 text-white mt-5"
+          >
             Proceed to Checkout
           </button>
         </div>
