@@ -1,5 +1,7 @@
 import React from "react";
 import design from "../../assets/design.png";
+import { toast } from 'react-toastify';
+
 
 const Carts = ({ cartProducts, setCartProducts}) => {
   console.log(cartProducts);
@@ -8,10 +10,11 @@ const Carts = ({ cartProducts, setCartProducts}) => {
     console.log(cartProducts);
     setCartProducts((prev) =>
       prev.filter((product) => product.id !== cartProducts.id),
+    toast.warning("Product removed from cart!")
     );
-    
-
   };
+
+  
   return (
     <div>
       {cartProducts.length === 0 ? (

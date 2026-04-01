@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Check } from "lucide-react";
+import { toast } from 'react-toastify';
 
 
 const ProductsData = ({ product,setCartProducts}) => {
@@ -9,6 +10,7 @@ const ProductsData = ({ product,setCartProducts}) => {
       const handleBuy = () => {
         setBuying(true);
         
+         toast("Product added to cart!")
         setCartProducts(prev => [...prev, product]);
       }
         return (

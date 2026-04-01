@@ -10,6 +10,7 @@ import PricingSection from './Components/Pricing/PricingSection'
 import Product from './Components/ProductCards/Product'
 import ReadySection from './Components/Ready/ReadySection'
 import Carts from './Components/Carts/Carts'
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -41,6 +42,10 @@ function App() {
       <PricingSection/>
       <ReadySection/>
       <Footer/>
+
+
+{/* React Toastify */}
+       <ToastContainer />
     </div>
      
     </>
